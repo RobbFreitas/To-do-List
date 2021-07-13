@@ -1,15 +1,15 @@
-var task = [];
+var arr_tarefas = JSON.parse(localStorage.getItem('arr_tarefas') || '[]');
 
 function adicionar(){
 
-    var tarefa = document.getElementById("task").value;
-
-    task.push(task);
-
-    var taskList = localStorage.setItem("task", task);
-
-    console.log((tarefa));
-
-    document.getElementById("lista").innerHTML = localStorage.getItem("task");
+    // Inserir elementos no array e no LocalStorage
+    var tarefa = document.getElementById("tarefa").value;
+    arr_tarefas.push(tarefa);
+    localStorage.setItem("tarefa", arr_tarefas);
     
+    // Exibir os dados
+    document.getElementById('tarefas', tarefa);
+    localStorage.getItem('tarefas');
+    document.getElementById('lista').innerHTML = tarefa;
+
 }

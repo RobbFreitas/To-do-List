@@ -1,0 +1,9 @@
+#lista{
+    display: block;
+}
+
+#li {
+    display: inline;
+    float: left;
+    float: right;
+}

@@ -5,14 +5,16 @@ function adicionar(){
     // Inserir elementos no array e no LocalStorage
     let tarefa = document.getElementById("tarefa").value;
     arr_tarefas.push(tarefa);
-    localStorage.setItem("tarefa", arr_tarefas);
+
+    localStorage.setItem("tarefa", JSON.stringify(arr_tarefas));
     
     udpateScreen();
 }
 
 function udpateScreen(){
 
-    let takeTasks = (localStorage.getItem("tarefa", arr_tarefas));
-    console.log(localStorage.getItem("tarefa"));
+    let takeTasks = JSON.parse(localStorage.getItem("tarefa"));
+    
+    JSON.stringify(takeTasks);
     document.getElementById("lista").innerHTML = takeTasks;
 }

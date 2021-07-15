@@ -6,7 +6,7 @@ function adicionar(){
     // Inserir elementos no array e no LocalStorage
     let tarefa = document.getElementById("tarefa").value;
     arr_tarefas.push(tarefa);
-    var taskList = localStorage.setItem("tarefa", JSON.stringify(arr_tarefas));
+    localStorage.setItem("tarefa", JSON.stringify(arr_tarefas));
 
     udpateScreen();
 }

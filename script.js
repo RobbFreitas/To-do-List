@@ -1,28 +1,31 @@
 // Array para adicionar as tarefas
-const arrayTarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+arrayTarefas = [];
 
-function adicionar(){
+window.onload = function () {
+  if (JSON.parse(localStorage.getItem("tarefas")) != null) {
+    arrayTarefas = JSON.parse(localStorage.getItem("tarefas"));
+  }
+  udpateScreen();
+};
 
-    // Inserir elementos no array e no LocalStorage
-    const tarefas = document.getElementById("tarefas").value;
+function adicionar() {
+  // Inserir elementos no array e no LocalStorage
+  const tarefas = document.getElementById("tarefas").value;
 
-    arrayTarefas.push(tarefas);
-    localStorage.setItem("tarefas", JSON.stringify(arrayTarefas));
+  arrayTarefas.push(tarefas);
+  localStorage.setItem("tarefas", JSON.stringify(arrayTarefas));
 
-    udpateScreen();
+  udpateScreen();
 }
 
-function udpateScreen(){
+function udpateScreen() {
+  document.getElementById("lista").innerHTML = "";
 
-    document.getElementById("lista").innerHTML = "";
+  console.log(JSON.parse(localStorage.getItem("tarefas")));
 
-    // const pegarArray = localStorage.getItem("tarefas", JSON.stringify(arrayTarefas))
-
-    arrayTarefas.forEach((elemento) => {    
-        // Aqui eu concateno um li, com o elemento for da vez, um a um, dentro dessa template, 
-        // com <li> abraçando    
-        document.getElementById("lista").innerHTML += `<li>${elemento}</li>`;  
-    });
-    
+  arrayTarefas.forEach((elemento) => {
+    // Aqui eu concateno um li, com o elemento for da vez, um a um, dentro dessa template,
+    // com <li> abraçando
+    document.getElementById("lista").innerHTML += `<li>${elemento}</li>`;
+  });
 }
-

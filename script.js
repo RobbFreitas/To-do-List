@@ -21,8 +21,6 @@ function adicionar() {
 function udpateScreen() {
   document.getElementById("lista").innerHTML = "";
 
-  console.log(JSON.parse(localStorage.getItem("tarefas")));
-
   arrayTarefas.forEach((elemento) => {
     // Aqui eu concateno um li, com o elemento for da vez, um a um, dentro dessa template,
     // com <li> abraçando

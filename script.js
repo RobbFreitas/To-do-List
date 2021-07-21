@@ -1,10 +1,11 @@
 // Array para adicionar as tarefas
 arrayTarefas = [];
 
-window.onload = function () {
+window.onload = function() {
   if (JSON.parse(localStorage.getItem("tarefas")) != null) {
     arrayTarefas = JSON.parse(localStorage.getItem("tarefas"));
   }
+
   udpateScreen();
 };
 
@@ -16,6 +17,13 @@ function adicionar() {
   localStorage.setItem("tarefas", JSON.stringify(arrayTarefas));
 
   udpateScreen();
+}
+
+function clearAll(){
+
+    localStorage.clear();
+    location.reload();
+    
 }
 
 function udpateScreen() {

@@ -24,5 +24,6 @@
 >## Objetivo do projeto
 
 + Treinar conceitos de LocalStorage e funções (JavaScript)
++ Manipulação do DOM
 + Aperfeiçoar conhecimentos em HTML
 + Aperfeiçoar conhecimentos em CSS

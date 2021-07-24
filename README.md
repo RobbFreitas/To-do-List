@@ -21,9 +21,9 @@
 + CSS 3 <br><br>
 
 
->## Objetivo do projeto
+>## Habilidades praticadas
 
-+ Treinar conceitos de LocalStorage e funções (JavaScript)
++ Conceitos de LocalStorage e funções (JavaScript)
 + Manipulação do DOM
-+ Aperfeiçoar conhecimentos em HTML
-+ Aperfeiçoar conhecimentos em CSS
++ Prática e conhecimento em HTML
++ Prática e conhecimento em CSS

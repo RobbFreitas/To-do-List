@@ -20,7 +20,8 @@
 
 + JavaScript
 + HTML 5
-+ CSS 3 <br><br>
++ CSS 3
++ Visual Studio Code <br><br>
 
 
 >## 🏋️‍♂️ Habilidades praticadas: 

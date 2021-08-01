@@ -31,6 +31,19 @@ h1 {
     cursor:default;
 
 }
+
+button {
+    transition-duration: 0.4s;
+    font-size: 12px;
+    width: 20px;
+    border-radius: 5px;
+  }
+  
+button:hover {
+    background-color: #b40c0c; /* Green */
+    color: white;
+  }
+
 #tarefas {
 
     width: 75%;
@@ -42,7 +55,22 @@ h1 {
 }
 
 #element {
+    transition-duration: 0.4s;
+    width: 25%;
+	margin: 0 auto;
+	padding: 5px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+    cursor: pointer;
+}
+#element:hover {
+    background-color: #0cb458; /* Green */
+    color: white;
+  }
 
+#element2 {
+    transition-duration: 0.4s;
     width: 25%;
 	margin: 0 auto;
 	padding: 5px;
@@ -52,15 +80,10 @@ h1 {
     cursor: pointer;
 }
 
-#element2 {
-
-    width: 25%;
-	margin: 0 auto;
-	padding: 5px;
-	border: none;
-	margin-bottom: 10px;
-	border-radius: 50px;
-    cursor: pointer;
+#element2:hover {
+    
+    background-color: #b40c0c; /* Green */
+    color: white;
 }
 .container{
     width: 100%;

@@ -13,9 +13,14 @@ function adicionar() {
   // Inserir elementos no array e no LocalStorage
   const tarefas = document.getElementById("tarefas").value;
 
+  if (tarefas == "") {
+    alert("Erro: Campo Vazio! Insira algo")
+  }else {
+
   arrayTarefas.push(tarefas);
   localStorage.setItem("tarefas", JSON.stringify(arrayTarefas));
-
+  }
+  
   udpateScreen();
 }
 
@@ -29,9 +34,10 @@ function clearAll(){
 function udpateScreen() {
   document.getElementById("lista").innerHTML = "";
 
+
   arrayTarefas.forEach((elemento) => {
     // Aqui eu concateno um li, com o elemento for da vez, um a um, dentro dessa template,
     // com <li> abraçando
-    document.getElementById("lista").innerHTML += `<li>${elemento}</li>`;
+    document.getElementById("lista").innerHTML += `<li>${elemento} <button>x</button></li>`;
   });
 }

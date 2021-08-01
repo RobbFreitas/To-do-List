@@ -38,6 +38,6 @@ function udpateScreen() {
   arrayTarefas.forEach((elemento) => {
     // Aqui eu concateno um li, com o elemento for da vez, um a um, dentro dessa template,
     // com <li> abraçando
-    document.getElementById("lista").innerHTML += `<li>${elemento} <button>x</button></li>`;
+    document.getElementById("lista").innerHTML += `<li>${elemento}</li>`;
   });
 }
